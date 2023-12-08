@@ -1,0 +1,135 @@
+---
+title: "Feasibility for Persistence by Grade level Measure for TCP"
+author: "R&A"
+format: html
+server: shiny
+---
+
+## Purpose
+
+IDEA is investigating replacing the Parent Surveys measure on TCP with a measure of Student Persistence. The purpose is to create a viable rubric 1-5 levels for the Student Persistence measure so each teacher may receive a measure based off their student's persistence rates. This rubric is to be based on goals on the campus's annual persistence goals and previous years student persistence rates. Along with the rubrics, previous student persistence rates will be applied to the rubrics to produce rates and counts in respective rubric levels, to understand the implications.
+
+### Approach
+
+We explored creating these rubrics using standard deviations.
+
+\*\* *Student Persistence Rates* (SPR) \*\* *Standard Deviation* (SD)
+
+| **Models**  | **Level 2/4/5 Goal +/- SPR SD** |
+|-------------|---------------------------------|
+| **Level 1** | 0                               |
+| **Level 2** | Goal minus 1/2 SD of SPR        |
+| **Level 3** | Goal                            |
+| **Level 4** | Goal plus 1/2 SD of SPR         |
+| **Level 5** | Goal plus 1 SD of SPR           |
+
+\
+We used two widely used student persistence rates
+
+-   Last Day of School (LDOS)
+
+-   First Day of Persistence (FDOP) 11th Day of School\
+
+We also created others aggregates not just on campus, all aggregations are as the following:
+
+-   Campuses
+
+-   Grade Levels
+
+-   Regional
+
+-   Grade Levels and Regional
+
+-   Org-wide
+
+#### Caveat
+
+For the sake of making this process practical, we will aggregate previous year student persistence rates based on grade level and not teachers student class enrollment.
+
+## Outcomes
+
+[Data Download](https://ideapublicschoolsorg.sharepoint.com/:x:/s/ResearchandAnalysis/EV7WGVMvpWREnbHKxX3CmcEBSeOlXGj-W4P69BCPhGcteg?e=FMg0La)
+
+### Summary
+
+```{r summary, echo=FALSE, warning=FALSE, message=FALSE}
+library(here)
+library(tidyverse)
+library(DT)
+source("data/load-data.R")
+source("src/prep-data.R")
+
+make_table(summaries_models_summary %>% 
+  dplyr::select(student_persistence = persistence_type_display,aggregatation = grouped_by_display, count = campuses,
+  count_level_1,count_level_2,count_level_3,count_level_4,count_level_5) %>%
+  janitor::clean_names(case = "title"))
+
+```
+
+### Model Selection
+
+```{r ui}
+#| panel: input
+
+selectInput(inputId = "persistence",
+            label = strong("Student Persistience Rates Selection"),
+            choices = unique(summaries_models$persistence_type_display),
+            selected = "FDOP", width="390px")
+
+selectInput(inputId = "aggregation",
+            label = strong("Aggregation Selection"),
+            choices = unique(summaries_models$grouped_by_display),
+            selected = "Level 2/4/5 Goal +/- SPR SD", width="390px")
+
+
+DT::DTOutput('aggTable')
+cat("\n")
+plotOutput("distPlot")
+```
+
+```{r server}
+#| context: server 
+
+library(here)
+library(tidyverse)
+library(DT)
+source("data/load-data.R")
+source("src/prep-data.R")
+
+selectedData <- reactive({
+  data <- prep_data(input$aggregation, input$persistence)
+  return(data)
+  })
+
+selectedData2 <- reactive({
+  data <- prep_data_2(input$aggregation, input$persistence)
+  return(data)
+  })
+
+output$aggTable <- renderDT({
+ 
+  data <- selectedData() 
+  
+  lastcol <- ncol(data)
+  
+  selectedData() %>%
+  DT::datatable(filter="top", rownames = FALSE)  %>%
+  DT::formatPercentage(c(lastcol-8,lastcol-6,lastcol-4,lastcol-2,lastcol)) 
+    
+})
+
+
+output$distPlot <- renderPlot({
+  
+  data <- selectedData2() 
+  
+   data %>% ggplot(aes(level)) + 
+     geom_histogram() +
+     facet_wrap(~ factor(grade, 
+                         c("PK","K","1","2","3","4","5",
+                           "6","7","8","9","10","11"))) + 
+     labs(x="Levels", y="Count", 
+          title = "Performance Level Distribution over Grade Levels") +
+     theme(plot.title = element_text(face="bold", size=16, hjust = 0.5))
+})
+```

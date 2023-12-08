@@ -1,0 +1,11 @@
+"model","persistence_type","persistence_type_display","grouped_by","grouped_by_display","count_level_1","count_level_2","count_level_3","count_level_4","count_level_5","campuses"
+"Level 2/4/5 Goal +/- SPR SD","FDOP","First Day of Persistience","academic_year | persistence_type","Org-wide",300,134,135,116,48,733
+"Level 2/4/5 Goal +/- SPR SD","FDOP","First Day of Persistience","academic_year | persistence_type | grade","Grade Level",309,125,122,115,62,733
+"Level 2/4/5 Goal +/- SPR SD","FDOP","First Day of Persistience","academic_year | persistence_type | region","Regional",323,138,151,76,45,733
+"Level 2/4/5 Goal +/- SPR SD","FDOP","First Day of Persistience","academic_year | persistence_type | region | campus","Campuses",345,133,132,54,69,733
+"Level 2/4/5 Goal +/- SPR SD","FDOP","First Day of Persistience","academic_year | persistence_type | region | grade","Regional and Grade Level",350,112,112,70,81,725
+"Level 2/4/5 Goal +/- SPR SD","LDOS","Last Day of School","academic_year | persistence_type","Org-wide",109,74,107,146,276,712
+"Level 2/4/5 Goal +/- SPR SD","LDOS","Last Day of School","academic_year | persistence_type | grade","Grade Level",104,79,102,132,295,712
+"Level 2/4/5 Goal +/- SPR SD","LDOS","Last Day of School","academic_year | persistence_type | region","Regional",87,58,105,135,327,712
+"Level 2/4/5 Goal +/- SPR SD","LDOS","Last Day of School","academic_year | persistence_type | region | campus","Campuses",90,60,92,101,369,712
+"Level 2/4/5 Goal +/- SPR SD","LDOS","Last Day of School","academic_year | persistence_type | region | grade","Regional and Grade Level",86,56,89,112,363,706

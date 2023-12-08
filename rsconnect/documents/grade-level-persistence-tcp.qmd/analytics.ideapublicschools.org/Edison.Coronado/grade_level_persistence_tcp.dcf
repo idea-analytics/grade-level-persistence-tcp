@@ -1,0 +1,14 @@
+name: grade_level_persistence_tcp
+title: Grade Level Persistence TCP
+username: Edison.Coronado
+account: Edison.Coronado
+server: analytics.ideapublicschools.org
+hostUrl: https://analytics.ideapublicschools.org/__api__
+appId: 192
+bundleId: 6752
+url: https://analytics.ideapublicschools.org/Grade_Level_Persistence_TCP/
+version: 1
+quarto_version: 1.3.433
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

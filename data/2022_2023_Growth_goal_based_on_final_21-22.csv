@@ -1,0 +1,69 @@
+AcademicYear,Region,School_Name,SchoolType,n_students,n_fam_med_movers,n_movers,n_leavers,persistence_rate_all,Quartile,growth target,22-23 Persistence Goal
+2021-2022,Austin,Bluff Springs,Campus,1360,105,91,268,80.29,2,4,84.29
+2021-2022,Austin,Health Professions,Campus,592,33,27,168,71.62,1,6.5,78.12
+2021-2022,Austin,Kyle,Campus,1242,59,49,314,74.72,2,4,78.72
+2021-2022,Austin,Montopolis,Campus,1465,65,46,194,86.76,3,2,88.76
+2021-2022,Austin,Parmer Park,Campus,1020,116,107,233,77.16,2,4,81.16
+2021-2022,Austin,Pflugerville,Campus,1179,45,33,279,76.34,2,4,80.34
+2021-2022,Austin,Round Rock Tech,Campus,850,56,51,220,74.12,1,6.5,80.62
+2021-2022,Austin,Rundberg,Campus,1362,56,47,195,85.68,3,2,87.68
+2021-2022,El Paso,Edgemere,Campus,1502,95,79,309,79.43,2,4,83.43
+2021-2022,El Paso,Horizon Vista,Campus,829,37,32,171,79.37,2,4,83.37
+2021-2022,El Paso,Mesa Hills,Campus,1037,82,71,340,67.21,1,6.5,73.71
+2021-2022,El Paso,Mesquite Hills,Campus,524,62,49,116,77.86,2,4,81.86
+2021-2022,El Paso,Rio Vista,Campus,1237,68,53,306,75.26,2,4,79.26
+2021-2022,Greater Houston Area,Hardy,Campus,895,85,76,215,75.98,2,4,79.98
+2021-2022,Greater Houston Area,Lake Houston,Campus,495,44,29,143,71.11,1,6.5,77.61
+2021-2022,Greater Houston Area,Spears,Campus,931,104,92,247,73.47,1,6.5,79.97
+2021-2022,Permian Basin,Travis,Campus,962,6,6,113,88.25,4,1,89.25
+2021-2022,Permian Basin,Yukon,Campus,501,29,17,74,85.23,3,2,87.23
+2021-2022,Rio Grande Valley,Alamo,Campus,1513,35,13,170,88.76,4,1,89.76
+2021-2022,Rio Grande Valley,Brownsville,Campus,1403,31,21,169,87.95,4,1,88.95
+2021-2022,Rio Grande Valley,Donna,Campus,1441,42,35,164,88.62,4,1,89.62
+2021-2022,Rio Grande Valley,Edinburg,Campus,1546,34,32,204,86.8,4,1,87.8
+2021-2022,Rio Grande Valley,Elsa,Campus,1142,42,30,121,89.4,3,2,91.4
+2021-2022,Rio Grande Valley,Frontier,Campus,1505,38,33,162,89.24,4,1,90.24
+2021-2022,Rio Grande Valley,Harlingen,Campus,629,28,19,83,86.8,4,1,87.8
+2021-2022,Rio Grande Valley,La Joya,Campus,347,15,10,34,90.2,exempt,maintain,90
+2021-2022,Rio Grande Valley,Los Encinos,Campus,1027,48,45,87,91.53,exempt,maintain,90
+2021-2022,Rio Grande Valley,McAllen,Campus,1603,49,35,192,88.02,4,1,89.02
+2021-2022,Rio Grande Valley,Mission,Campus,1527,73,68,201,86.84,4,1,87.84
+2021-2022,Rio Grande Valley,North Mission,Campus,1537,61,44,182,88.16,4,1,89.16
+2021-2022,Rio Grande Valley,Owassa,Campus,1138,63,37,152,86.64,3,2,88.64
+2021-2022,Rio Grande Valley,Palmview,Campus,664,29,23,78,88.25,4,1,89.25
+2021-2022,Rio Grande Valley,Pharr,Campus,1504,28,14,145,90.36,exempt,maintain,90
+2021-2022,Rio Grande Valley,Quest,Campus,1381,52,36,190,86.24,3,2,88.24
+2021-2022,Rio Grande Valley,Rio Grande City,Campus,1355,36,21,216,84.06,3,2,86.06
+2021-2022,Rio Grande Valley,Riverview,Campus,1493,41,27,138,90.76,exempt,maintain,90
+2021-2022,Rio Grande Valley,Robindale,Campus,967,31,22,117,87.9,4,1,88.9
+2021-2022,Rio Grande Valley,San Benito,Campus,1538,31,25,191,87.58,4,1,88.58
+2021-2022,Rio Grande Valley,San Juan,Campus,1439,51,27,220,84.71,3,2,86.71
+2021-2022,Rio Grande Valley,Sports Park,Campus,608,31,26,86,85.86,3,2,87.86
+2021-2022,Rio Grande Valley,Toros,Campus,242,14,5,75,69.01,1,6.5,75.51
+2021-2022,Rio Grande Valley,Tres Lagos,Campus,1330,65,51,243,81.73,3,2,83.73
+2021-2022,Rio Grande Valley,Weslaco,Campus,1373,40,32,156,88.64,4,1,89.64
+2021-2022,Rio Grande Valley,Weslaco Pike,Campus,1541,22,18,179,88.38,4,1,89.38
+2021-2022,San Antonio,Brackenridge,Campus,1399,78,50,259,81.49,3,2,83.49
+2021-2022,San Antonio,Burke,Campus,1064,95,73,255,76.03,2,4,80.03
+2021-2022,San Antonio,Carver,Campus,1307,71,42,244,81.33,3,2,83.33
+2021-2022,San Antonio,Converse,Campus,705,80,73,127,81.99,3,2,83.99
+2021-2022,San Antonio,Eastside,Campus,1233,130,96,388,68.53,1,6.5,75.03
+2021-2022,San Antonio,Ewing Halsell,Campus,1371,72,52,258,81.18,3,2,83.18
+2021-2022,San Antonio,Hidden Meadow,Campus,689,45,32,176,74.46,1,6.5,80.96
+2021-2022,San Antonio,Ingram Hills,Campus,1049,43,32,263,74.93,2,4,78.93
+2021-2022,San Antonio,Judson,Campus,1446,104,79,313,78.35,2,4,82.35
+2021-2022,San Antonio,Mays,Campus,1375,64,52,231,83.2,3,2,85.2
+2021-2022,San Antonio,Monterrey Park,Campus,1326,62,53,244,81.6,3,2,83.6
+2021-2022,San Antonio,Najim,Campus,1107,108,71,288,73.98,1,6.5,80.48
+2021-2022,San Antonio,Robinson,Campus,392,37,35,112,71.43,1,6.5,77.93
+2021-2022,San Antonio,South Flores,Campus,1560,59,50,285,81.73,3,2,83.73
+2021-2022,San Antonio,Walzem,Campus,1410,118,82,360,74.47,1,6.5,80.97
+2021-2022,Southern Louisiana,Bridge,Campus,1237,139,93,357,71.14,1,6.5,77.64
+2021-2022,Southern Louisiana,Innovation,Campus,1111,298,295,447,59.77,1,6.5,66.27
+2021-2022,Southern Louisiana,UP,Campus,539,62,56,187,65.31,1,6.5,71.81
+2021-2022,Tampa,Hope,Campus,512,45,36,174,66.02,1,6.5,72.52
+2021-2022,Tampa,Victory,Campus,554,15,12,122,77.98,2,4,81.98
+2021-2022,Tarrant County,Achieve,Campus,885,69,55,230,74.01,1,6.5,80.51
+2021-2022,Tarrant County,Edgecliff,Campus,836,75,60,145,82.66,3,2,84.66
+2021-2022,Tarrant County,Rise,Campus,923,83,58,196,78.76,2,4,82.76
+2021-2022,Tarrant County,Southeast,Campus,458,36,20,110,75.98,2,4,79.98
